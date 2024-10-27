@@ -1,0 +1,17 @@
+<div>
+    <h1>Add / Edit Product</h1>
+    <form (ngSubmit)="onSubmit()">
+      <label for="id">ID:</label>
+      <input type="text" id="id" [(ngModel)]="product.id" name="id" required>
+  
+      <label for="volume">Volume:</label>
+      <input type="text" id="volume" [(ngModel)]="product.volume" name="volume" required>
+  
+      <label for="location">Location:</label>
+      <input type="text" id="location" [(ngModel)]="product.location" name="location" required>
+  
+      <button type="submit">Add / edit product</button>
+    </form>
+    <p>Typing a new id will add a new product</p>
+    <p>Typing an existing id will edit the product</p>
+  </div>

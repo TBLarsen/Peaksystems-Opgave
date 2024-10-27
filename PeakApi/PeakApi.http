@@ -1,0 +1,6 @@
+@PeakApi_HostAddress = http://localhost:5286
+
+GET {{PeakApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

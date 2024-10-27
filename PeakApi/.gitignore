@@ -1,0 +1,63 @@
+# Ignore build output directories
+bin/
+obj/
+
+# Ignore .NET Core specific files
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Ignore user-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore directories related to Visual Studio
+.vscode/
+.vs/
+.vscode/
+
+# Ignore Rider and JetBrains specific files
+.idea/
+*.sln.iml
+
+# Ignore macOS Finder files
+.DS_Store
+
+# Ignore Windows file
+Thumbs.db
+
+# Ignore generated files
+*.dll
+*.exe
+*.app
+*.so
+*.dylib
+*.log
+*.vsix
+
+# Ignore package manager directories
+node_modules/
+wwwroot/lib/
+
+# Ignore build artifacts
+*.pdb
+*.mdb
+*.pidb
+*.cache
+*.ilk
+*.idb
+*.bak
+*.swp
+*.tmp
+*.diff
+*.orig
+*.patch
+
+# Ignore environment-specific configuration files
+.env
+.env.*
+*.secret
+*.sensitive

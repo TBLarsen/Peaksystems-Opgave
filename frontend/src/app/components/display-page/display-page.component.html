@@ -1,0 +1,28 @@
+<div class="pageContainer">
+    <h1>Products</h1>
+    <input type="text" placeholder="Search products..." [(ngModel)]="searchTerm" (input)="filterProducts()" />
+    <p>*Clicking on the table header will sort the products by that column</p>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th (click)="sortProducts('id')">ID</th>
+                <th (click)="sortProducts('volume')">Volume</th>
+                <th (click)="sortProducts('location')">Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let product of filteredProducts">
+                <td>{{ product.id }}</td>
+                <td>{{ product.volume }}</td>
+                <td>{{ product.location }}</td>
+                <td>
+                    <button (click)="deleteProduct(product.id)">
+                        Delete
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button routerLink="/add-product">Add/edit Product</button>
+</div>
